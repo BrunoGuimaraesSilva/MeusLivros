@@ -6,6 +6,11 @@ public class Editora : Entity
 
     public IList<Livro> Livros { get; set; }
 
+    public Editora(string name)
+    {
+        Name = name;
+        Livros = new List<Livro>();
+    }
     public Editora(int id, string name)
     {
         Id = id;
@@ -13,7 +18,7 @@ public class Editora : Entity
         Livros = new List<Livro>();
     }
 
-    public Editora()
+    public Editora(int id)
     {
         Livros = new List<Livro>();
     }
